@@ -1,10 +1,10 @@
 # SRCDS Watchdog
-A small Docker watchdog that monitors [SRCDS containers](https://github.com/Ethorbit/steamcmd-server-docker/tree/main) through RCON and automatically restarts unresponsive containers.
+A small Docker watchdog that monitors [SRCDS containers](https://github.com/Ethorbit/steamcmd-server-docker/tree/main) through RCON and automatically restarts them if they are unresponsive.
 
 ## How It Works
 
-* Discovers SRCDS containers using Docker labels.
-* Periodically checks RCON with `status`.
+* Discovers SRCDS containers using **Docker labels**.
+* Periodically checks **RCON** with `status`.
 * Retries failed checks.
 * Restarts containers after repeated failures.
 * Runs independently from the monitored SRCDS containers.
