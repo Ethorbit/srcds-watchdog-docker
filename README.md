@@ -5,9 +5,8 @@ A small Docker watchdog that monitors [SRCDS containers](https://github.com/Etho
 
 * Discovers SRCDS containers using **Docker labels**.
 * Periodically checks **RCON** with `status`.
-* Retries failed checks.
 * Restarts containers after repeated failures.
-* Runs independently from the monitored SRCDS containers.
+* Runs independently from monitored containers.
 
 ## Labels
 Each monitored container specifies its RCON settings through Docker labels:
